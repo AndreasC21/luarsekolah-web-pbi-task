@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@theme {
+  --font-gabarito: Gabarito, sans-serif;
+  --bg-white: #f7f7f7;
+}
+
+* {
+  scroll-behavior: smooth;
+}
