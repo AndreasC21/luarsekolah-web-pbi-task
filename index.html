@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="./src/output.css" rel="stylesheet" />
+    <link href="./src/styles.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Gabarito:wght@400..900&display=swap"
       rel="stylesheet"
@@ -17,9 +17,8 @@
     />
   </head>
   <body class="font-gabarito text-xl bg-white">
-    <div
-      id="nav"
-      class="flex justify-around py-3 fixed bg-white top-0 w-full z-10"
+    <nav
+      class="flex justify-around py-4 fixed bg-white/40 top-0 w-full z-10 backdrop-filter backdrop-blur-md"
     >
       <div id="title">
         <span>Andreas Calvin</span>
@@ -43,14 +42,14 @@
           target="_blank"
         ></a>
       </div>
-    </div>
+    </nav>
     <div id="home" class="flex justify-around bg-amber-300 py-20">
       <div id="left" class="flex w-1/2 flex-col py-10 pl-45">
         <h1 class="font-bold text-7xl">Halo semuanya!</h1>
         <p class="my-5 text-2xl">
           Nama saya, <span class="font-semibold italic">Andreas Calvin</span>.
           <br />
-          <span class="text-sm">-seorang mahasiswa pemula</span>
+          <span class="text-sm italic">seorang mahasiswa pemula</span>
         </p>
         <a
           href="#about"
@@ -60,13 +59,10 @@
       </div>
       <div id="right" class="flex w-1/2">
         <div class="relative mx-auto py-10">
-          <img
-            src="/public/images/profile.png"
-            alt="Andreas Calvin"
-            class="w-100"
-          />
+          <img src="/images/profile.png" alt="Andreas Calvin" class="w-100" />
           <span class="text-xs italic"
-            >Itsuki Nakano, from The Quintessential Quintuplets</span
+            >*Foto di atas berasal dari item Coreful Figure Itsuki Nakano -
+            Renewal Seifuku Ver.</span
           >
         </div>
       </div>
@@ -87,6 +83,49 @@
 
     <div id="contact" class="py-10 px-45">
       <h1 class="font-bold text-7xl">Yuk ngobrol!</h1>
+      <h2 class="font-semibold text-3xl pt-2">Cek sosial media saya hehe</h2>
+      <div class="py-5">
+        <div class="text-2xl">
+          <a href="https://github.com/AndreasC21" target="_blank"
+            ><i class="fab fa-github"></i
+            ><span class="pl-2">AndreasC21</span></a
+          >
+        </div>
+
+        <div class="text-2xl">
+          <a href="https://linkedin.com/in/andreascalvin" target="_blank"
+            ><i class="fab fa-linkedin"></i
+            ><span class="pl-2">Andreas Calvin</span></a
+          >
+        </div>
+
+        <div class="text-2xl">
+          <a href="https://facebook.com/AndreasCalvin21" target="_blank"
+            ><i class="fab fa-facebook"></i
+            ><span class="pl-2">Andreas Calvin</span></a
+          >
+        </div>
+
+        <div class="text-2xl">
+          <a href="https://instagram.com/andreasc.21" target="_blank"
+            ><i class="fab fa-instagram"></i
+            ><span class="pl-2">@andreasc.21</span></a
+          >
+        </div>
+
+        <div class="text-2xl">
+          <a
+            href="https://mail.google.com/mail/u/0/?fs=1&amp;to=andreascalvin21@gmail.com&amp;su=Hi!&amp;tf=cm"
+            target="_blank"
+            ><i class="fa-solid fa-envelope"></i
+            ><span class="pl-2">andreascalvin21@gmail.com</span></a
+          >
+        </div>
+      </div>
     </div>
+    <footer class="text-xs text-end px-5 py-7">
+      &copy;Copyright 2025, Andreas Calvin (untuk Mini Project-based Intership
+      dari Luarsekolah)
+    </footer>
   </body>
 </html>
