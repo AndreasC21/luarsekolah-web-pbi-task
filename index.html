@@ -26,8 +26,8 @@
       <div id="content" class="flex">
         <div id="nav-items" class="flex justify-around">
           <a href="#about" class="pr-5">About</a>
-          <a href="#" class="pr-5">Projects</a>
-          <a href="#" class="">Contact</a>
+          <a href="#project" class="pr-5">Projects</a>
+          <a href="#contact" class="">Contact</a>
         </div>
       </div>
       <div id="shortcut">
@@ -68,7 +68,7 @@
       </div>
     </div>
     <div id="about" class="py-10 px-45">
-      <h1 class="font-bold text-7xl">Siapakah aku?</h1>
+      <h1 class="font-bold text-7xl pt-5">Siapakah aku?</h1>
       <p class="text-2xl py-3">
         Perkenalkan, nama saya Andreas Calvin. Saya adalah seorang mahasiswa
         Teknik Informatika yang masih pemula dan belajar mengenai pemrograman.
@@ -78,57 +78,102 @@
     </div>
 
     <div id="project" class="py-10 px-45">
-      <h1 class="font-bold text-7xl pb-4">Hasil karyaku sebelumnya!</h1>
+      <h1 class="font-bold text-7xl pb-4 pt-5">Hasil karyaku sebelumnya!</h1>
 
       <div class="flex">
         <a href="https://phoning.vercel.app" target="_blank">
-          <div class="shadow-2xl border-2 rounded-xl p-5">
-            <h2 class="text-3xl pb-4">Phoning</h2>
-            <img src="images/phoning.png" alt="" class="w-100" />
+          <div
+            class="shadow-2xl border-2 rounded-xl p-5 hover:scale-105 transition 200s ease-in-out"
+          >
+            <h2 class="text-2xl pb-4">Phoning</h2>
+            <img src="images/phoning.png" alt="" class="w-80" />
           </div>
         </a>
       </div>
     </div>
 
     <div id="contact" class="py-10 px-45">
-      <h1 class="font-bold text-7xl">Yuk ngobrol!</h1>
-      <h2 class="font-semibold text-3xl pt-2">Cek sosial media saya hehe</h2>
-      <div class="py-5">
-        <div class="text-2xl">
-          <a href="https://github.com/AndreasC21" target="_blank"
-            ><i class="fab fa-github"></i
-            ><span class="pl-2">AndreasC21</span></a
-          >
+      <h1 class="font-bold text-7xl pt-5">Yuk ngobrol!</h1>
+      <div class="flex justify-around max-w-6xl">
+        <div id="left" class="flex w-1/2 flex-col">
+          <h2 class="font-semibold text-3xl pt-2">
+            Cek sosial media saya hehe
+          </h2>
+          <div class="py-5">
+            <div class="text-2xl">
+              <a href="https://github.com/AndreasC21" target="_blank"
+                ><i class="fab fa-github"></i
+                ><span class="pl-2">AndreasC21</span></a
+              >
+            </div>
+            <div class="text-2xl">
+              <a href="https://linkedin.com/in/andreascalvin" target="_blank"
+                ><i class="fab fa-linkedin"></i
+                ><span class="pl-2">Andreas Calvin</span></a
+              >
+            </div>
+            <div class="text-2xl">
+              <a href="https://facebook.com/AndreasCalvin21" target="_blank"
+                ><i class="fab fa-facebook"></i
+                ><span class="pl-2">Andreas Calvin</span></a
+              >
+            </div>
+            <div class="text-2xl">
+              <a href="https://instagram.com/andreasc.21" target="_blank"
+                ><i class="fab fa-instagram"></i
+                ><span class="pl-2">@andreasc.21</span></a
+              >
+            </div>
+            <div class="text-2xl">
+              <a
+                href="https://mail.google.com/mail/u/0/?fs=1&amp;to=andreascalvin21@gmail.com&amp;su=Hi!&amp;tf=cm"
+                target="_blank"
+                ><i class="fa-solid fa-envelope"></i
+                ><span class="pl-2">andreascalvin21@gmail.com</span></a
+              >
+            </div>
+          </div>
         </div>
+        <div id="right" class="flex w-1/2 flex-col py-10 pl-45">
+          <form action="https://formcarry.com/s/MWWLooeOXGo" method="post">
+            <div class="flex">
+              <div class="flex flex-col">
+                <label for="name">Nama</label>
+                <label for="email" class="mt-5">Email</label>
+                <label for="message" class="mt-5">Pesan</label>
+              </div>
+              <div class="flex-col pl-5">
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  class="border-1 rounded-lg p-1"
+                />
 
-        <div class="text-2xl">
-          <a href="https://linkedin.com/in/andreascalvin" target="_blank"
-            ><i class="fab fa-linkedin"></i
-            ><span class="pl-2">Andreas Calvin</span></a
-          >
-        </div>
+                <input
+                  type="email"
+                  id="email"
+                  name="email"
+                  required
+                  class="border-1 rounded-lg mt-5 p-1"
+                />
 
-        <div class="text-2xl">
-          <a href="https://facebook.com/AndreasCalvin21" target="_blank"
-            ><i class="fab fa-facebook"></i
-            ><span class="pl-2">Andreas Calvin</span></a
-          >
-        </div>
-
-        <div class="text-2xl">
-          <a href="https://instagram.com/andreasc.21" target="_blank"
-            ><i class="fab fa-instagram"></i
-            ><span class="pl-2">@andreasc.21</span></a
-          >
-        </div>
-
-        <div class="text-2xl">
-          <a
-            href="https://mail.google.com/mail/u/0/?fs=1&amp;to=andreascalvin21@gmail.com&amp;su=Hi!&amp;tf=cm"
-            target="_blank"
-            ><i class="fa-solid fa-envelope"></i
-            ><span class="pl-2">andreascalvin21@gmail.com</span></a
-          >
+                <input
+                  id="message"
+                  name="message"
+                  required
+                  class="border-1 rounded-lg mt-5 py-8 p-1"
+                />
+                <input
+                  id="submit"
+                  type="submit"
+                  value="Kirim Pesan"
+                  class="bg-amber-300 px-5 py-2 rounded-lg mt-5 w-56 hover:bg-amber-100 transition duration-200 ease-in-out cursor-pointer"
+                />
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>
@@ -136,5 +181,6 @@
       &copy;Copyright 2025, Andreas Calvin (untuk Mini Project-based Intership
       dari Luarsekolah)
     </footer>
+    <script src="./src/script.js"></script>
   </body>
 </html>
